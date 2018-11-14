@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <TextView
+        fontPath="fonts/mono_light.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Can a Mobile Neural Network recognise what you are doodling?"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        tools:ignore="MissingPrefix" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/slideTwoAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:lottie_fileName="animations/lamp.json" />
+
+    <TextView
+        fontPath="fonts/mono_light.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="I intend to find out!"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:ignore="MissingPrefix" />
+
+</LinearLayout>

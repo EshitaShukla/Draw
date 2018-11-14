@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:summary="Know More"
+        android:title="About Draw">
+        <intent
+            android:targetClass="io.eshita.draw.activities.AboutRapidDrawActivity"
+            android:targetPackage="io.eshita.draw" />
+    </Preference>
+
+    <Preference
+        android:summary="Sharing the Open Source Love"
+        android:title="Fork on GitHub">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/EshitaShukla/Draw" />
+    </Preference>
+
+
+    <Preference
+        android:summary="Follow developer (GitHub)"
+        android:title="Developed by Eshita Shukla">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/EshitaShukla" />
+    </Preference>
+</PreferenceScreen>

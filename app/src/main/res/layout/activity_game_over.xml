@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context="io.eshita.draw.activities.GameOverActivity">
+
+    <TextView
+        fontPath="fonts/marker.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Game Over"
+        android:textSize="32sp"
+        tools:ignore="MissingPrefix" />
+
+    <TextView
+        android:id="@+id/numGuess"
+        fontPath="fonts/mono_light.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Guessed X/8 drawings"
+        android:textSize="20sp"
+        tools:ignore="MissingPrefix" />
+
+    <Button
+        android:id="@+id/playAgain"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        fontPath="fonts/mono_medium.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="Play Again"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingPrefix" />
+
+    <Button
+        android:id="@+id/goToMenu"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        fontPath="fonts/mono_medium.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="Back to Main Menu"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingPrefix" />
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="io.eshita.draw.activities.MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:weightSum="4.0"
+        tools:ignore="UselessParent">
+
+        <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.0"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.0"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                fontPath="fonts/mono_light.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center|bottom"
+                android:text="Welcome to"
+                android:textSize="20sp"
+                tools:ignore="MissingPrefix,NestedWeights" />
+
+            <TextView
+                fontPath="fonts/marker.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center|bottom"
+                android:text="@string/rapiddraw"
+                android:textSize="28sp"
+                tools:ignore="MissingPrefix,NestedWeights" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/menuAnimation"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:lottie_fileName="animations/categories.json" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/startGame"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            fontPath="fonts/mono_medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorAccent"
+            android:elevation="4dp"
+            android:text="Start Doodling!"
+            android:textColor="@android:color/white"
+            tools:ignore="MissingPrefix" />
+
+        <Button
+            android:id="@+id/shareGame"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            fontPath="fonts/mono_medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorAccent"
+            android:elevation="4dp"
+            android:text="Share"
+            android:textColor="@android:color/white"
+            tools:ignore="MissingPrefix" />
+1
+        <Button
+            android:id="@+id/settingsGame"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            fontPath="fonts/mono_medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorAccent"
+            android:elevation="4dp"
+            android:text="@string/settings_info"
+            android:textColor="@android:color/white"
+            tools:ignore="MissingPrefix" />
+
+        <Button
+            android:id="@+id/exitGame"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            fontPath="fonts/mono_medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorAccent"
+            android:elevation="4dp"
+            android:text="Exit"
+            android:textColor="@android:color/white"
+            tools:ignore="MissingPrefix" />
+    </LinearLayout>
+</RelativeLayout>

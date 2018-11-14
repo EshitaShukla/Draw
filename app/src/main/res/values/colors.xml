@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- this is a collection of all the colours that are being used-->
+
+<resources>
+    <color name="colorPrimary">#0583a5</color>
+    <color name="colorPrimaryDark">#00695C</color>
+    <color name="colorAccent">#fa0137a9</color> <!-- main color -->
+    <color name="black_semi_transparent">#b2000000</color>
+    <color name="background_card">#eeeeee</color>
+</resources>

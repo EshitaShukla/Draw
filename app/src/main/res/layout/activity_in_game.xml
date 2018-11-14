@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.eshita.draw.activities.InGameActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <com.ritesh.ratiolayout.RatioRelativeLayout
+            android:id="@+id/activity_main_ratio_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:fixed_attribute="WIDTH"
+            app:horizontal_ratio="1"
+            app:vertical_ratio="1">
+
+            <com.rm.freedrawview.FreeDrawView
+                android:id="@+id/your_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                app:paintAlpha="255"
+                app:paintColor="@android:color/black"
+                app:paintWidth="4dp"
+                app:resizeBehaviour="crop" />
+
+        </com.ritesh.ratiolayout.RatioRelativeLayout>
+
+        <TextView
+            android:id="@+id/timerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="00:00"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/predictionStringView"
+            fontPath="fonts/mono_light.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="I see a lolololol"
+            android:textSize="18sp"
+            tools:ignore="MissingPrefix" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_undo"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    fontPath="fonts/mono_medium.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Undo"
+                    android:textColor="@android:color/white"
+                    tools:ignore="MissingPrefix" />
+
+                <Button
+                    android:id="@+id/btn_redo"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    fontPath="fonts/mono_medium.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Redo"
+                    android:textColor="@android:color/white"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_clear_all"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                fontPath="fonts/mono_medium.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Clear all"
+                android:textColor="@android:color/white"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

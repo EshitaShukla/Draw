@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <TextView
+        fontPath="fonts/mono_light.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/of_course_it_doesn_t_work_everytime"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        tools:ignore="MissingPrefix" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/slideFourAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:lottie_fileName="animations/shock.json" />
+
+    <TextView
+        fontPath="fonts/mono_light.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="But I am constantly working on it!"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:ignore="MissingPrefix" />
+
+</LinearLayout>

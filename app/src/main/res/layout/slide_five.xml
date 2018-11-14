@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#463168"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <TextView
+        fontPath="fonts/marker.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Happy doodling!"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        tools:ignore="MissingPrefix" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/slideFiveAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:lottie_fileName="animations/drink.json" />
+
+    <TextView
+        fontPath="fonts/mono_light.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="No. This is not Skynet. Don\'t worry ;)"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:ignore="MissingPrefix" />
+
+</LinearLayout>
